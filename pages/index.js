@@ -4,9 +4,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Sonobese</title>
+        <title>園部製作所</title>
       </Head>
-      <h1>Home</h1>
     </div>
   );
 }
