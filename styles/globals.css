@@ -20,3 +20,6 @@ a {
 
 /* ------------------LOADING---------------------- */
 @import url("./loading.css");
+
+/* ------------------INTRODUCE---------------------- */
+@import url("./introduce.css");
