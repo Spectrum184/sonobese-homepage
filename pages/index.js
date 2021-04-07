@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>園部製作所</title>
+        <title>株式会社園部製作所</title>
       </Head>
     </div>
   );

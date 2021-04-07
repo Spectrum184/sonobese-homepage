@@ -1,17 +1,55 @@
-.navbar-top{
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    background-color: #FFFFFF;
-    align-items: center;
-    box-shadow: 0 0 10px #777777;
+.navbar {
+  background-color: transparent;
+  padding: 5px 0;
+  transition: all 0.5s ease;
 }
 
-.navbar-top .company-name{
-    color: #000000;
-    font-size: 2.4rem;
+.navbar .container {
+  padding: 5px 0;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  color: var(--white-color);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.navbar-shrink {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--main-color);
+  padding: 10px 0;
+}
+
+.navbar .nav-item {
+  margin-left: 40px;
+}
+
+.navbar .nav-item .nav-link {
+  color: var(--white-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400;
+  padding: 5px 0;
+  position: relative;
+}
+
+.navbar .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--white-color);
+  transition: all 0.5s ease;
+  transform: scale(0);
+}
+
+.navbar .nav-item .nav-link:hover::before {
+  transform: scale(1);
+}
+
+.navbar .nav-item .nav-link.active::before {
+  transform: scale(1);
 }

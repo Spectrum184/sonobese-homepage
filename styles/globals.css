@@ -4,22 +4,119 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --main-color: #142e75;
+  --white-color: #ffffff;
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --black-alpha-100: rgba(0, 0, 0, 0.05);
+  --background-color: #ebeced;
+  --pink-color: #ff79c6;
+  --green-color: #50fa7b;
+  --purple-color: #bd93f9;
+  --red-color: #ff5555;
+  --black-color: #282a36;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
 }
 
 * {
   box-sizing: border-box;
 }
 
+/* ------------------BUTTON---------------------- */
+.btn-normal {
+  background-color: var(--white-color);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: var(--main-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: var(--shadow-black-300);
+  font-weight: 500;
+}
+
+.btn-normal:focus {
+  box-shadow: var(--shadow-black-300);
+}
+
+.btn-normal:hover {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+
+/* ------------------EFFECT---------------------- */
+.effect-wrap .effect {
+  position: absolute;
+  z-index: -1;
+}
+
+.effect-wrap .effect-1 {
+  left: 20%;
+  top: 20%;
+  font-size: 20px;
+  color: var(--pink-color);
+  animation: spin_360 5s linear infinite;
+}
+
+.effect-wrap .effect-2 {
+  right: 5%;
+  top: 10%;
+  font-size: 25px;
+  color: var(--purple-color);
+  animation: spin_360 7s linear infinite;
+}
+
+.effect-wrap .effect-3 {
+  left: 5%;
+  bottom: 30%;
+  font-size: 25px;
+  color: var(--red-color);
+  animation: bounceTop 7s linear infinite;
+}
+
+/* ------------------SECTION---------------------- */
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  color: var(--black-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.section-title h2 span {
+  color: var(--main-color);
+}
+
 /* ------------------NAVBAR---------------------- */
 @import url("./navbar.css");
 
-/* ------------------LOADING---------------------- */
-@import url("./loading.css");
-
 /* ------------------INTRODUCE---------------------- */
 @import url("./introduce.css");
+
+/* ------------------KEYFRAME---------------------- */
+@import url("./keyframe.css");
+
+/* ------------------HOME---------------------- */
+@import url("./home.css");

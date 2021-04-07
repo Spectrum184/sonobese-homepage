@@ -13,18 +13,21 @@ class MyDocument extends Document {
           <html class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"><![endif]-->
           <!--[if gt IE 8]><!--> */}
           <meta name="description" content="園部製作所" />
-          <meta name="keywords" content="パイプベンダー,プレス加工,レーザー加工,各種溶接,株式会社園部製作所" />
-          <meta name="description" content="株式会社園部製作所は、茨城県常総市の茨城工場でパイプ曲げ加工、プレス加工、レーザー加工、各種溶接を行っている会社です。主に自動車部品と建設機械部品を得意としております。" />
+          <meta
+            name="keywords"
+            content="パイプベンダー,プレス加工,レーザー加工,各種溶接,株式会社園部製作所"
+          />
+          <meta
+            name="description"
+            content="株式会社園部製作所は、茨城県常総市の茨城工場でパイプ曲げ加工、プレス加工、レーザー加工、各種溶接を行っている会社です。主に自動車部品と建設機械部品を得意としております。"
+          />
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           />
           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-          <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet"
-          />
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         </Head>
         <body>
           <Main />
