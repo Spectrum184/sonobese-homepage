@@ -29,6 +29,11 @@ $(document).ready(function () {
     }
   });
 
+  //navbar collapse
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
   //policy carousel
   $(".policy-carousel").owlCarousel({
     loop: false,
