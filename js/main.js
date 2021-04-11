@@ -18,6 +18,17 @@ $(document).ready(function () {
     }
   });
 
+  // Scroll and show button back home
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 360) {
+      $("#btn-back-home").removeClass("hide-icon");
+      $("#btn-back-home").addClass("show-icon");
+    } else {
+      $("#btn-back-home").removeClass("show-icon");
+      $("#btn-back-home").addClass("hide-icon");
+    }
+  });
+
   //policy carousel
   $(".policy-carousel").owlCarousel({
     loop: false,
@@ -71,6 +82,41 @@ $(document).ready(function () {
   // Page scrolling
   $.scrollIt({
     topOffset: -50,
+  });
+
+  //toggle theme
+  function updateIcon() {
+    if ($("body").hasClass("dark")) {
+      $(".toggle-theme i").removeClass("fa-moon");
+      $(".toggle-theme i").addClass("fa-sun");
+    } else {
+      $(".toggle-theme i").removeClass("fa-sun");
+      $(".toggle-theme i").addClass("fa-moon");
+    }
+  }
+
+  function toggleTheme() {
+    var bodyTheme = localStorage.getItem("sonobe");
+    if (bodyTheme !== null) {
+      if (bodyTheme === "dark") {
+        $("body").addClass("dark");
+      } else {
+        $("body").removeClass("dark");
+      }
+    }
+    updateIcon();
+  }
+
+  toggleTheme();
+
+  $(".toggle-theme").on("click", function () {
+    $("body").toggleClass("dark");
+    if ($("body").hasClass("dark")) {
+      localStorage.setItem("sonobe", "dark");
+    } else {
+      localStorage.setItem("sonobe", "light");
+    }
+    updateIcon();
   });
 
   // Function for swapping dictionaries
