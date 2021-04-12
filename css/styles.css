@@ -115,7 +115,7 @@ ul {
 @keyframes bounceTop {
   0%,
   100% {
-    transform: translateY(-30px);
+    transform: translateY(-10px);
   }
   50% {
     transform: translateY(0px);
@@ -262,6 +262,14 @@ ul {
   margin-left: 40px;
 }
 
+.navbar .nav-item .custom-select{
+  font-size: 12px;
+  color: var(--white-color);
+  outline: none;
+  background-color: var(--main-color);
+  margin-top: 5px;
+}
+
 .navbar .nav-item .nav-link {
   color: var(--white-color);
   font-size: 20px;
@@ -395,6 +403,36 @@ ul {
 /* ------------------GREETING---------------------- */
 .greeting {
   background-color: var(--background-color);
+}
+
+.greeting-item .greeting-image{
+  position: relative;
+  text-align: center;
+}
+
+.greeting-item img{
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 2px solid var(--main-color);
+  box-shadow:var(--shadow-black-300);
+}
+
+.greeting-item h4{
+  position: absolute;
+}
+
+.greeting-item .greeting-content p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-color);
+  margin: 10px;
 }
 
 /* ------------------POLICY---------------------- */

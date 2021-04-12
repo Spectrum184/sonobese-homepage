@@ -1,8 +1,22 @@
+ // Lets be professional, shall we?
+ "use strict";
+
 var dictionary, set_lang;
 
+
+var slideUp = {
+  distance: '200%',
+  origin: 'bottom',
+  opacity: null
+};
+
+//
+var greeting = document.querySelector(".greeting .greeting-item");
+
+// add animate for greeting section
+ScrollReveal().reveal(greeting, { delay: 375, reset: true });
+
 $(document).ready(function () {
-  // Lets be professional, shall we?
-  "use strict";
 
   //preload
   $(window).on("load", function () {

@@ -49,7 +49,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" data-scroll-nav="0"  href>
           <span data-translate="_navbar-company">園部製作所</span>
         </a>
 
@@ -68,34 +68,34 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="1" href="#">
+              <a class="nav-link" data-scroll-nav="1" href>
                 <span data-translate="_navbar-introduce">紹介</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="2"  href="#product">
+              <a class="nav-link" data-scroll-nav="2"  href>
                 <span data-translate="_navbar-product">製品</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="3"  href="#">
+              <a class="nav-link" data-scroll-nav="3"  href>
                 <span data-translate="_navbar-equipment">設備</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="4"  href="#">
+              <a class="nav-link" data-scroll-nav="4"  href>
                 <span data-translate="_navbar-activity">活動</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="5"  href="#">
+              <a class="nav-link" data-scroll-nav="5"  href>
                 <span　data-translate="_navbar-address">アドレス</span>
               </a>
             </li>
             <li class="nav-item lang-select">
               <select class="custom-select" id="lang">
-                <option value="japanese">One</option>
-                <option value="english">Two</option>
+                <option value="japanese">Japanese</option>
+                <option value="english">English<ption>
               </select>
             </li>
           </ul>
@@ -104,7 +104,7 @@
     </nav>
 
     <!-- ------------------HOME---------------------- -->
-    <section data-scroll-index="1" class="home d-flex align-items-center">
+    <section data-scroll-index="0" class="home d-flex align-items-center">
       <div class="effect-wrap">
         <i class="fas fa-plus effect effect-1"></i>
         <i class="fas fa-plus effect effect-2"></i>
@@ -139,9 +139,10 @@
 
     <!-- ------------------INTRODUCE---------------------- -->
     <!-- ------------------GREETING---------------------- -->
-    <section class="greeting section-padding">
+    <section data-scroll-index="1" class="greeting section-padding">
       <div class="container">
         <div class="row justify-content-center">
+          <div class="col-lg-2"></div>
           <div class="col-lg-8">
             <div class="section-title">
               <h2><span data-translate="_greeting-title-1">工場長</span><span class="second-text" data-translate="_greeting-title-2">挨拶</span></h2>
@@ -153,7 +154,7 @@
             <div class="col-lg-5 col-md-5">
               <div class="greeting-image">
                 <img src="images/greeting/kouzyouchou1.jpg" alt="kouyouchou">
-                <h4><span data-translate="_greeting-content-2"></span></h4>
+                <h4><span data-translate="_greeting-content-2">名前</span></h4>
               </div>
             </div>
             <div class="col-lg-7 col-md-7">
@@ -322,7 +323,7 @@
     </section>
 
     <!-- -----------------EQUIPMENT------------------- -->
-    <section class="equipment section-padding">
+    <section data-scroll-index="3" class="equipment section-padding">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -338,7 +339,7 @@
     </section>
 
     <!-- -----------------ACTIVITY------------------- -->
-    <section class="activity section-padding">
+    <section data-scroll-index="4" class="activity section-padding">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -385,7 +386,7 @@
     </section>
 
     <!-- -----------------CONTACT------------------- -->
-    <section class="contact section-padding">
+    <section data-scroll-index="5" class="contact section-padding">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -487,7 +488,7 @@
 
     <!-- -----------------BACK HOME------------------- -->
    <div id="btn-back-home" class="hide-icon">
-    <div class="back-home" data-scroll-nav="1">
+    <div class="back-home" data-scroll-nav="0">
       <i class="fas fa-arrow-up"></i>
     </div>
    </div>
@@ -497,7 +498,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/scrollIt.min.js"></script>
-    <script src="js/gsap.min.js"></script>
+    <script src="js/scrollReveal.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
